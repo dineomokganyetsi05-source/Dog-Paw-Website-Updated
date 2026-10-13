@@ -7,40 +7,176 @@
   <meta name="description" content="Learn about Dog Paw, a non-profit organisation established in 2020 to support dogs and owners who need assistance.">
   <meta name="robots" content="index,follow">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Leaflet map styling -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Dog Paw home"><span class="brand-mark" aria-hidden="true">🐾</span><span>Dog Paw<small>Care. Community. Every paw.</small></span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <a class="brand" href="index.html" aria-label="Dog Paw home">
+      <span class="brand-mark" aria-hidden="true">🐾</span>
+      <span>
+        Dog Paw
+        <small>Care. Community. Every paw.</small>
+      </span>
+    </a>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav">
+      Menu
+    </button>
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html" aria-current="page">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="dog-care.html">Dog Care</a>
-        <a href="success-stories.html">Success Stories</a>
-        <a href="donate.html">Donate</a>
-        <a href="enquiry.html">Request Help</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="dog-care.html">Dog Care</a>
+      <a href="success-stories.html">Success Stories</a>
+      <a href="donate.html">Donate</a>
+      <a href="enquiry.html">Request Help</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 <main id="main">
-<section class="page-hero"><div class="container"><p class="eyebrow">Who we are</p><h1>About Dog Paw</h1><p class="lead">A community-led non-profit focused on supporting dogs and the people who care for them.</p></div></section>
-<section class="section"><div class="container narrow"><h2>Our story</h2><p>Dog Paw was established in 2020 during the COVID-19 lockdown by a group of animal lovers. It began with a desire to assist abandoned and stray dogs struggling to survive. The organisation has since developed a focus on helping dog owners who love their pets but cannot always afford essential expenses.</p><h2>Our mission</h2><p>To support dogs and the people who care for them by providing essential resources and assistance to owners who cannot afford adequate care.</p><h2>Our vision</h2><p>A community where every dog has access to food, shelter, basic necessities, and appropriate medical care, regardless of its owner's financial circumstances.</p><div class="notice"><strong>Where we work:</strong> Dog Paw is based in Boksburg and primarily serves the East Rand, with plans to expand into the West Rand. Please contact us to confirm current service availability.</div><h2>Our service area</h2><p>The map marks general areas only, not a confirmed office address. Select a marker for a short description.</p><div id="service-map" class="service-map" role="region" aria-label="Interactive map of Dog Paw's general service areas"></div><p class="small-note">Map tiles require an internet connection. The locations are approximate area markers.</p></div></section>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
-<script src="js/map.js" defer></script>
+  <!-- Page introduction -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Who we are</p>
+      <h1>About Dog Paw</h1>
+      <p class="lead">
+        A community-led non-profit focused on supporting
+        dogs and the people who care for them.
+      </p>
+    </div>
+  </section>
+  <!-- About Dog Paw -->
+  <section class="section">
+    <div class="container narrow">
+      <h2>Our Story</h2>
+      <p>
+        Dog Paw was established in 2020 during the COVID-19
+        lockdown by a group of animal lovers. It began with
+        a desire to assist abandoned and stray dogs struggling
+        to survive. The organisation has since developed a
+        focus on helping dog owners who love their pets but
+        cannot always afford essential expenses.
+      </p>
+      <h2>Our Mission</h2>
+      <p>
+        To support dogs and the people who care for them by
+        providing essential resources and assistance to owners
+        who cannot afford adequate care.
+      </p>
+      <h2>Our Vision</h2>
+      <p>
+        A community where every dog has access to food,
+        shelter, basic necessities, and appropriate medical
+        care, regardless of its owner's financial circumstances.
+      </p>
+      <!-- Location information -->
+      <div class="notice">
+        <strong>Where We Work:</strong>
+        Dog Paw NPO is based in Boksburg and primarily serves
+        the East Rand. The organisation hopes to expand its
+        services to the West Rand in the future. Please contact
+        us to confirm current service availability.
+      </div>
+      <!-- Service area map -->
+      <h2>Our Service Areas</h2>
+      <p>
+        Our current base is located at 56 Caresbee Road,
+        Mapleton AH, Boksburg. We primarily serve the East
+        Rand and aim to support dogs and pet owners in need
+        within our community.
+      </p>
+      <p>
+        We also hope to extend our reach to the West Rand
+        in the future. This is a proposed expansion area,
+        and a West Rand office has not yet been confirmed.
+      </p>
+      <div
+        id="service-map"
+        class="service-map"
+        role="region"
+        aria-label="Interactive map showing Dog Paw's Boksburg base and proposed West Rand expansion area">
+      </div>
+      <p class="small-note">
+        Select a map marker for more information. The Boksburg
+        marker represents Dog Paw's current base. The West
+        Rand marker represents a proposed future service area,
+        not an established office. Map markers may indicate
+        approximate locations.
+      </p>
+      <p>
+        <a
+          class="button"
+          href="contact.html">
+          Contact Dog Paw
+        </a>
+      </p>
+    </div>
+  </section>
 </main>
+<!-- Footer -->
 <footer class="site-footer">
   <div class="container footer-grid">
-    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">🐾</span><span>Dog Paw<small>Care. Community. Every paw.</small></span></a><p>Supporting dogs and the people who care for them.</p></div>
-    <div><h2>Explore</h2><a href="about.html">About us</a><a href="services.html">Our services</a><a href="dog-care.html">Dog care tips</a></div>
-    <div><h2>Get involved</h2><a href="donate.html">Donate</a><a href="enquiry.html">Request assistance</a><a href="contact.html">Contact us</a></div>
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">🐾</span>
+        <span>
+          Dog Paw
+          <small>Care. Community. Every paw.</small>
+        </span>
+      </a>
+      <p>Supporting dogs and the people who care for them.</p>
+    </div>
+    <div>
+      <h2>Explore</h2>
+      <a href="about.html">About us</a>
+      <a href="services.html">Our services</a>
+      <a href="dog-care.html">Dog care tips</a>
+    </div>
+    <div>
+      <h2>Get Involved</h2>
+      <a href="donate.html">Donate</a>
+      <a href="enquiry.html">Request assistance</a>
+      <a href="contact.html">Contact us</a>
+    </div>
   </div>
-  <div class="container footer-bottom"><p>© <span id="year">2026</span> Dog Paw. Website project prototype.</p><p><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a></p></div>
+  <div class="container footer-bottom">
+    <p>
+      © <span id="year">2026</span> Dog Paw.
+      Website project prototype.
+    </p>
+    <p>
+      <a href="https://www.facebook.com/"
+         target="_blank"
+         rel="noopener noreferrer">Facebook</a>
+      ·
+      <a href="https://www.tiktok.com/"
+         target="_blank"
+         rel="noopener noreferrer">TikTok</a>
+    </p>
+  </div>
 </footer>
+<!-- Interactive map library -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+  defer>
+</script>
+<!-- Dog Paw map configuration -->
+<script src="js/map.js" defer></script>
+<!-- Main website functionality -->
 <script src="js/script.js" defer></script>
 </body>
 </html>
