@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# Replace the example domain with the live website domain before publishing.
+Sitemap: https://www.example.com/sitemap.xml

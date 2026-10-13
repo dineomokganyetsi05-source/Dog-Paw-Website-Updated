@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request Assistance | Dog Paw</title>
+  <meta name="description" content="Contact Dog Paw to enquire about assistance for your dog, volunteering, or sponsorship.">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Dog Paw home"><span class="brand-mark" aria-hidden="true">🐾</span><span>Dog Paw<small>Care. Community. Every paw.</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="dog-care.html">Dog Care</a>
+        <a href="success-stories.html">Success Stories</a>
+        <a href="donate.html">Donate</a>
+        <a href="enquiry.html" aria-current="page">Request Help</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container"><p class="eyebrow">We're here to listen</p><h1>Make an enquiry</h1><p class="lead">Use this form to ask about assistance for your dog, volunteering, or sponsorship. Submitting this demo form does not send your information to Dog Paw.</p></div></section>
+<section class="section"><div class="container form-layout"><div><h2>What would you like to enquire about?</h2><p>Tell us a little about what you need. We'll show a summary after validating the form so you can review the details.</p><div class="notice"><strong>Please note:</strong> Support depends on available resources. If a dog is in immediate danger, contact an appropriate local animal welfare or veterinary service.</div></div>
+<form id="enquiry-form" class="form-card" novalidate>
+<div class="form-row"><div class="field"><label for="enq-name">Full name *</label><input id="enq-name" name="name" autocomplete="name" required minlength="2"></div><div class="field"><label for="enq-email">Email address *</label><input id="enq-email" name="email" type="email" autocomplete="email" required></div></div>
+<div class="form-row"><div class="field"><label for="enq-phone">Phone number</label><input id="enq-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9+() -]{7,20}" title="Enter a valid phone number using 7 to 20 digits or common phone symbols."></div><div class="field"><label for="enq-type">Enquiry type *</label><select id="enq-type" name="type" required><option value="">Choose one</option><option value="Assistance for my dog">Assistance for my dog</option><option value="Volunteering">Volunteering</option><option value="Sponsorship or donation">Sponsorship or donation</option><option value="Other">Other</option></select></div></div>
+<div class="field"><label for="enq-area">Suburb or area *</label><input id="enq-area" name="area" required minlength="2" placeholder="e.g. Boksburg"></div>
+<div class="field"><label for="enq-details">Tell us more *</label><textarea id="enq-details" name="details" rows="5" required minlength="10" maxlength="1000" placeholder="Describe the help or information you are looking for."></textarea><small>At least 10 characters, maximum 1,000.</small></div>
+<button class="button" type="submit">Review enquiry</button><p id="enquiry-message" class="form-message" aria-live="polite"></p><div id="enquiry-result" class="result-card" hidden></div>
+</form></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">🐾</span><span>Dog Paw<small>Care. Community. Every paw.</small></span></a><p>Supporting dogs and the people who care for them.</p></div>
+    <div><h2>Explore</h2><a href="about.html">About us</a><a href="services.html">Our services</a><a href="dog-care.html">Dog care tips</a></div>
+    <div><h2>Get involved</h2><a href="donate.html">Donate</a><a href="enquiry.html">Request assistance</a><a href="contact.html">Contact us</a></div>
+  </div>
+  <div class="container footer-bottom"><p>© <span id="year">2026</span> Dog Paw. Website project prototype.</p><p><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a></p></div>
+</footer>
+<script src="js/script.js" defer></script>
+</body>
+</html>

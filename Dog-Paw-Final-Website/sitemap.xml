@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Replace https://www.example.com with the live domain before publishing. -->
+  <url><loc>https://www.example.com/index.html</loc></url>
+  <url><loc>https://www.example.com/about.html</loc></url>
+  <url><loc>https://www.example.com/services.html</loc></url>
+  <url><loc>https://www.example.com/enquiry.html</loc></url>
+  <url><loc>https://www.example.com/contact.html</loc></url>
+  <url><loc>https://www.example.com/donate.html</loc></url>
+  <url><loc>https://www.example.com/dog-care.html</loc></url>
+  <url><loc>https://www.example.com/success-stories.html</loc></url>
+</urlset>
